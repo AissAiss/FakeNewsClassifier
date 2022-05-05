@@ -6,5 +6,5 @@
 
 
 <p align="center">
-  <img src="newplot.png">
+  <img src="rddc/newplot.png">
 </p>
