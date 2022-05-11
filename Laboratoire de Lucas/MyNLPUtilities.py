@@ -63,6 +63,15 @@ def MyshowAllScores(y_test,y_pred):
   cnf_matrix = confusion_matrix(y_test,y_pred)
   plot_confusion_matrix(cnf_matrix, classes)
 
+# fonction qui affiche accuracy
+def MyshowAccuracy(y_test,y_pred):
+  classes= np.unique(y_test)
+  print("Accuracy : %0.3f"%(accuracy_score(y_test,y_pred)))
+
+# 
+def getAccuracy(y_test,y_pred):
+  classes= np.unique(y_test)
+  return str("Accuracy : %0.3f"%(accuracy_score(y_test,y_pred)))
 
 # fonction qui teste un ensemble de pipeline et affiche les meilleurs résultats triés par score    
 def MyTestPipelines(models,X,y,score='accuracy'):
